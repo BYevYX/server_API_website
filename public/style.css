@@ -1,0 +1,53 @@
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://s.tmimgcdn.com/scr/800x500/275000/krasivyj-fon-psd--krasivyj-gradient-cveta-fona-psd-sablon_275059-original.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+#container div {
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 20px);
+    max-width: 300px;
+    height: 145px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-image: url(https://img.freepik.com/free-vector/beautiful-watercolor-background_23-2148486848.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+#container div:hover {
+    border-color: #45a049;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+}
+
+#h1 {
+    background-image: url(https://avatars.dzeninfra.ru/get-zen_doc/1852570/pub_5d3f150492414d00ad5ab75e_5d3f1d97a660d700ae867fe6/scale_1200);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+#h1:hover {
+    background-color: #45a049; 
+}

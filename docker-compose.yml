@@ -1,0 +1,22 @@
+# Версия docker-compose
+version: '3.8'
+
+# Сервисы
+services:
+  # Сервис для приложения
+  nodejs-app:
+    # Используем собранный образ из Dockerfile
+    build:
+      context: .
+      dockerfile: dockerfile
+
+    working_dir: /usr/src/app
+    # запуск
+    command: npm start
+    # порт 
+    ports:
+      - "8000:8000"
+    # монтируем текущую директорию как том, 
+    # чтобы изменения в коде отображались внутри контейнера без пересборки образа
+    volumes:
+      - .:/usr/src/app
